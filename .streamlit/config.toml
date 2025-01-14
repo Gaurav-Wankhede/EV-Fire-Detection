@@ -1,0 +1,70 @@
+[theme]
+# Primary accent color for interactive elements
+primaryColor = "#FF4B4B"
+
+# Background color for the main content area
+backgroundColor = "#FFFFFF"
+
+# Background color used for the sidebar and most interactive widgets
+secondaryBackgroundColor = "#F0F2F6"
+
+# Color used for almost all text
+textColor = "#262730"
+
+# Font family for all text in the app, except code blocks
+font = "sans serif"
+
+[server]
+# Enable auto-reloading when files change
+runOnSave = true
+
+# Enable websocket compression
+enableWebsocketCompression = true
+
+# Port number
+port = 8501
+
+# Enable CORS
+enableCors = true
+
+# Enable XSRF protection
+enableXsrfProtection = true
+
+[browser]
+# Whether to open the browser automatically when the app is run
+gatherUsageStats = false
+
+[deprecation]
+showfileUploaderEncoding = false
+
+[global]
+# Automatically show documentation when the app is run
+showDocOnLoad = false
+
+# Development mode
+developmentMode = false
+
+[logger]
+# Log level
+level = "info"
+
+[runner]
+# Enable magic commands
+magicEnabled = true
+
+# Enable command line interface
+cliEnabled = true
+
+[client]
+# Whether to enable st.cache caching
+caching = true
+
+# Whether to show the hamburger menu
+showSidebarNavigation = true
+
+# Timeout for data connections in milliseconds
+connectionTimeout = 300000  # 5 minutes
+
+[mapbox]
+# Token for Mapbox integration (if needed)
+token = ""

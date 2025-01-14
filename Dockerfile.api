@@ -1,0 +1,22 @@
+# Use Python 3.9 slim image
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the API code and model
+COPY api.py .
+COPY model/ ./model/
+
+# Add environment variable for port
+ENV PORT=8080
+
+# Expose port
+EXPOSE 8080
+
+# Command to run the API
+CMD exec uvicorn api:app --host 0.0.0.0 --port ${PORT}
